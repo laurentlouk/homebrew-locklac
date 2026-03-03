@@ -12,5 +12,11 @@ cask "locklac" do
   app "lockLac.app"
   binary "#{appdir}/lockLac.app/Contents/MacOS/locklac"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", "com.apple.quarantine", "#{appdir}/lockLac.app"],
+                   sudo: false
+  end
+
   zap trash: "~/.locklac"
 end
