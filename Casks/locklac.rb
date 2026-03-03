@@ -1,6 +1,6 @@
 cask "locklac" do
-  version "0.2.0"
-  sha256 "33e6f303f97a2e9798ff0bd398f751598788184e4e71f5c5999b382b1af52e32"
+  version "0.3.0"
+  sha256 "25ad6cf00e1d9471361011ce16fb6a8409f20fed458d80825ca8a8f3596f7141"
 
   url "https://github.com/laurentlouk/locklac/releases/download/v#{version}/lockLac-#{version}.zip"
   name "lockLac"
@@ -20,3 +20,4 @@ cask "locklac" do
 
   zap trash: "~/.locklac"
 end
+
