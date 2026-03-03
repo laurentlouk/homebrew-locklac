@@ -5,7 +5,6 @@ class Locklac < Formula
   sha256 "2320be217c2001ff83a4a019b265b8972f69e429fa7f8f5307af5a5355d515a3"
   license "MIT"
 
-  depends_on xcode: ["15.0", :build]
   depends_on :macos
 
   def install
